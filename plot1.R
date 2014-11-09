@@ -14,7 +14,7 @@ plot1 <- function(){
     ##opens the screen device on windows
     windows()
     ##creates a histogram and sends it to the screen
-    hist(x, xlab="Global Active Power(kilowatts)", main="Global Active Power", col="red")
+    hist(x, xlab="Global Active Power (kilowatts)", main="Global Active Power", col="red")
     ##copies the histogram to a "plot1.png" file inside the working directory
     dev.copy(png, file="plot1.png")
     ##closes the png device

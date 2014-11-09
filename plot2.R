@@ -18,7 +18,7 @@ plot2 <- function(){
     ##opens the screen device on windows
     windows()  
     ##creates a histogram and sends it to the screen
-    plot(x, y, type="l", xlab="Days", ylab="Global Active Power(kilowatts)")
+    plot(x, y, type="l", main="Plot 2",xlab=" ", ylab="Global Active Power (kilowatts)", bg="white")
     ##copies the histogram to a "plot2.png" file inside the working directory
     dev.copy(png, file="plot2.png")
     ##closes the png device
