@@ -24,7 +24,7 @@ plot4 <- function(){
     windows()  
     
     opar <- par(no.readonly=TRUE)
-    par(mfrow=c(2,2))
+    par(mfrow=c(2,2), mar=c(4,4,3,2), oma = c(0,0,2,0))
     
     ##creates a 1st plot and sends it to the screen
     plot(x, y1, type="l", xlab=" ", ylab="Global Active Power", col="black")
@@ -44,6 +44,8 @@ plot4 <- function(){
     
     ##creates a 4th plot and sends it to the screen
     plot(x, y4, type="l", xlab="datetime", ylab="Global Reactive Power", col="black")
+    
+    mtext("Plot 4", outer =TRUE)
     
     par(opar)
         
